@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: 'Nome do App',
     description: 'Descrição do App',
+    applicationName: 'Nome do App',
+    authors: [{ url: 'https://seedabit.org.br', name: 'Seed a Bit' }],
+    keywords: ['palavra-chave', 'palavra-chave'],
+    creator: 'Seed a Bit',
+    publisher: 'Seed a Bit',
+    abstract: 'Descrição do App',
 }
 
 export default function RootLayout({
@@ -24,6 +30,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='pt-BR'>
+            <head>
+                <link rel="icon" href="/icons/favicon.ico" />
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
