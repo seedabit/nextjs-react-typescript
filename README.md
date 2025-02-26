@@ -12,6 +12,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [React](#react)
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
+    - [Jest](#jest)
 - [On Deployment](#on-deployment)
 - [Code Rules and Guidelines](#code-rules-and-guidelines)
     - [Directory Structure](#directory-structure)
