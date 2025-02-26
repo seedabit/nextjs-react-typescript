@@ -94,6 +94,15 @@ EsLint is a tool for identifying and reporting on patterns found in ECMAScript/J
 > [!WARNING]
 > Eslint will throw errors if the code does not follow the rules defined in `.eslintrc.config.mjs`. It is recommended to fix all linting errors before pushing your code.
 
+### Jest
+
+Jest is also included in the project for testing. Run `npm run test` to run the tests.
+
+- [My first Jest Test](https://jestjs.io/docs/getting-started) - a guide to writing your first Jest test and Jest documentation.
+
+> [!IMPORTANT]
+> Make sure to write tests for your code. It is recommended to write tests for all functions in the project.
+
 ## On Deployment
 
 Don't forget to add environment variables and secrets for deployment. You can use `.env.local` for local development and `.env.production`/`.env` for production. For Github Actions, you can use Github Secrets or Github Environment variables.
@@ -201,6 +210,4 @@ To quickly and easily generate favicons for the app, go to [Favicon Generator](h
 
 # notes - TODO
 
-testing with jest
-tailwind v4.0?
-do license.md file
+make LICENSE.md file
