@@ -214,6 +214,6 @@ To quickly and easily generate favicons for the app, go to [Favicon Generator](h
 - [Zod](https://zod.dev): A library for data validation in TypeScript. Quick, robust and easy to use.
 - [Axios](https://axios-http.com): A library for making HTTP requests in React. Easy to use and configure, creating axios instances for different APIs.
 
-# notes - TODO
+## License
 
-make LICENSE.md file
+This project is licensed, see the [LICENSE](LICENSE) file for details.
