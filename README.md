@@ -1,4 +1,4 @@
-# Next.js + React + Tailwind CSS + TypeScript + ESLint project template
+# Next.js + React + Tailwind CSS + TypeScript + ESLint + Jest project template
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app@12`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
     - [Jest](#jest)
-- [On Deployment](#on-deployment)
+- [On Deploying](#on-deploying)
 - [Code Rules and Guidelines](#code-rules-and-guidelines)
     - [Directory Structure](#directory-structure)
     - [Naming Conventions](#naming-conventions)
@@ -104,9 +104,14 @@ Jest is also included in the project for testing. Run `npm run test` to run the 
 > [!IMPORTANT]
 > Make sure to write tests for your code. It is recommended to write tests for all functions in the project.
 
-## On Deployment
+## On Deploying
 
 Don't forget to add environment variables and secrets for deployment. You can use `.env.local` for local development and `.env.production`/`.env` for production. For Github Actions, you can use Github Secrets or Github Environment variables.
+
+There is an always existing environment variable in all projects `NODE_ENV`. It is set to `development` in development and `production` in production.
+
+> [!TIP]
+> Don't forget to add the `NEXT_PUBLIC_` prefix to the environment variables you want to use in the client-side code. This is a security measure to prevent sensitive data from being exposed.
 
 ## Code Rules and Guidelines
 
