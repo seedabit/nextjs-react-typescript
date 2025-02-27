@@ -21,6 +21,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [Styling Conventions](#styling-conventions)
     - [Extra](#extra)
 - [Library Recommendations](#library-recommendations)
+- [Extensions](#extensions)
+- [License](#license)
 
 ## TechStack
 
@@ -112,6 +114,9 @@ There is an always existing environment variable in all projects `NODE_ENV`. It 
 
 > [!TIP]
 > Don't forget to add the `NEXT_PUBLIC_` prefix to the environment variables you want to use in the client-side code. This is a security measure to prevent sensitive data from being exposed.
+
+> [!WARNING]
+> It's good to override the default _notf
 
 ## Code Rules and Guidelines
 
@@ -213,6 +218,15 @@ To quickly and easily generate favicons for the app, go to [Favicon Generator](h
 - [Firebase](https://firebase.google.com): A backend service for authentication, database, storage, and more. Easy to use and integrate with React.
 - [Zod](https://zod.dev): A library for data validation in TypeScript. Quick, robust and easy to use.
 - [Axios](https://axios-http.com): A library for making HTTP requests in React. Easy to use and configure, creating axios instances for different APIs.
+
+## Extensions
+
+> [!IMPORTANT]
+> The TailwindCSS extension is a must-have for TailwindCSS projects. It provides IntelliSense for TailwindCSS classes.
+
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): IntelliSense for Tailwind CSS.
+- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Jest testing for JavaScript and TypeScript.
+- [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets): React snippets for JavaScript and TypeScript.
 
 ## License
 
