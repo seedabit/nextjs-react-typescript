@@ -1,5 +1,8 @@
 # Next.js + React + Tailwind CSS + TypeScript + ESLint + Jest project template
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.pt-br.md)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app@12`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Index
