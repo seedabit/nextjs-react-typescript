@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Index
 
-- [TechStack](#stack-versions)
+- [TechStack](#techstack)
 - [Getting Started](#getting-started)
     - [API Routes](#api-routes)
 - [Learn More](#learn-more)
@@ -21,7 +21,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [Styling Conventions](#styling-conventions)
     - [Extra](#extra)
 - [Library Recommendations](#library-recommendations)
-- [Extensions](#extensions)
+- [VSCode Extensions](#vscode-extensions)
 - [License](#license)
 
 ## TechStack
@@ -34,7 +34,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Firstly, clone the repository:
+
+```bash
+git clone https://github.com/seedabit/nextjs-react-typescript.git
+```
+
+Then, navigate to the project directory:
+
+```bash
+cd nextjs-react-typescript
+```
+
+Furthermore, run the development server:
 
 ```bash
 npm run dev
@@ -65,7 +77,7 @@ Next.js is a React framework that enables functionality like server-side renderi
 
 ### React
 
-React is a JavaScript library for building reactive and reusable user interfaces.
+React is a JavaScript/Typescript library for building reactive and reusable user interfaces.
 
 - [React Documentation](https://reactjs.org/docs/getting-started.html) - learn about React features and API.
 - [Learn React](https://reactjs.org/tutorial/tutorial.html) - an interactive React tutorial.
@@ -104,19 +116,16 @@ Jest is also included in the project for testing. Run `npm run test` to run the 
 - [My first Jest Test](https://jestjs.io/docs/getting-started) - a guide to writing your first Jest test and Jest documentation.
 
 > [!IMPORTANT]
-> Make sure to write tests for your code. It is recommended to write tests for all functions in the project.
+> Make sure to write tests for your code. It is recommended to write tests for all non-component functions in the project.
 
 ## On Deploying
 
 Don't forget to add environment variables and secrets for deployment. You can use `.env.local` for local development and `.env.production`/`.env` for production. For Github Actions, you can use Github Secrets or Github Environment variables.
 
-There is an always existing environment variable in all projects `NODE_ENV`. It is set to `development` in development and `production` in production.
+There is an always existing environment variable in all Node projects `NODE_ENV`. It's used to track the current execution environment. Use `process.env.NODE_ENV` to check the current environment.
 
 > [!TIP]
-> Don't forget to add the `NEXT_PUBLIC_` prefix to the environment variables you want to use in the client-side code. This is a security measure to prevent sensitive data from being exposed.
-
-> [!WARNING]
-> It's good to override the default _notf
+> Don't forget to add the `NEXT_PUBLIC_` prefix to the environment variables you want to use in the client-side code.
 
 ## Code Rules and Guidelines
 
@@ -185,12 +194,12 @@ Maintain the defined directory system for better organization and maintainabilit
 
 ### Styling Conventions
 
-- Use `tailwindcss` classes for styling instead of pixel values. Fixed values aren't responsive and can cause issues on different screen sizes.
+- Use TailwindCSS classes for styling instead of pixel values. Fixed values aren't responsive and can cause issues on different screen sizes.
     - E.g. `w-1/2` instead of `width: 200px`.
 - Prefer using `flex` and `grid` for layout instead of `float` and `position`.
-- Use `gap-value` or `space-y-value` instead of `margin`/`padding` for spacing between elements. Keeps the code cleaner, readable, and responsive.
+- Use `gap-{value}` or `space-y-{value}` instead of `margin`/`padding` for spacing between elements. Keeps the code cleaner, readable, and responsive.
 - Use `!important` ONLY when necessary. It can cause specificity issues and make the code harder to maintain.
-- You may create separate CSS files for specific use cases (animated loaders, custom components, etc.). Keep the CSS file in the same directory as the component using it.
+- You may create separate CSS files for specific use cases (e.g. animated loaders). Keep the CSS file in the same directory as the component using it.
 - Only use inline styles when necessary. It is harder to maintain and can cause specificity issues.
 
 ### Extra
@@ -214,19 +223,19 @@ To quickly and easily generate favicons for the app, go to [Favicon Generator](h
 - [Shadcn](https://ui.shadcn.com): A utility library for React/TailwindCSS components, easily customizable and extendable. Use the CLI to generate components, hooks, and more.
 - [Redux](https://redux.js.org): A state management library for React. Easy to use and integrate with React, with a lot of features. Great for global state management.
 - [Framer Motion](https://www.framer.com/motion/): A library for animations in React. Simple and easy to use, with a lot of features.
-- [Lucide](https://lucide.dev): A library of icons for React. Use the CLI to generate icons for your project.
+- [Lucide](https://lucide.dev): A library of icons for React.
 - [Firebase](https://firebase.google.com): A backend service for authentication, database, storage, and more. Easy to use and integrate with React.
 - [Zod](https://zod.dev): A library for data validation in TypeScript. Quick, robust and easy to use.
 - [Axios](https://axios-http.com): A library for making HTTP requests in React. Easy to use and configure, creating axios instances for different APIs.
 
-## Extensions
+## VSCode Extensions
 
 > [!IMPORTANT]
 > The TailwindCSS extension is a must-have for TailwindCSS projects. It provides IntelliSense for TailwindCSS classes.
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): IntelliSense for Tailwind CSS.
 - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Jest testing for JavaScript and TypeScript.
-- [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets): React snippets for JavaScript and TypeScript.
+- [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets): React snippets for JSX and TSX.
 
 ## License
 
