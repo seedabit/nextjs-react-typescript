@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Home() {
     return (
         <div className='w-full h-screen items-center justify-center flex flex-col space-y-16 p-10'>
-            <Image src='/images/SeedABit.png' alt='Seed a Bit - logo' width={500} height={175} />
+            <Image src='/images/seed-a-bit.png' alt='Seed a Bit - logo' width={500} height={175} />
             <div className='flex flex-col space-y-1.5 items-center justify-center text-center'>
                 <h1 className='text-2xl font-medium'>Este é o template da empresa para websites.</h1>
                 <p>Tudo o que você precisa pode ser encontrado no arquivo <code>README.md</code> deste repositório.</p>
