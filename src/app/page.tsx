@@ -19,10 +19,10 @@ export default function Home() {
                     </a>
                 </Link>
             </div>
-            <div className='w-full absolute bottom-4 flex flex-col space-y-2 items-center'>
+            <footer className='w-full absolute bottom-4 flex flex-col space-y-2 items-center'>
                 <hr className='w-64' />
                 <p className='text-sm'>© 2025 Seed a Bit. All rights reserved.</p>
-            </div>
+            </footer>
         </div>
     )
 }
