@@ -1,0 +1,13 @@
+if npm test | grep -q 'No tests found'; then
+  echo "No tests to run, proceeding with commit."
+  exit 0
+fi
+
+npm test
+
+if [ $? -ne 0 ]; then
+  echo "Tests must pass before commit!"
+  exit 1
+fi
+
+exit 0
