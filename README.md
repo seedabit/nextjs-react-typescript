@@ -16,6 +16,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
     - [Jest](#jest)
+    - [Husky](#husky)
+- [On commits, branches, and PRs](#on-commits-branches-and-prs)
 - [On Deploying](#on-deploying)
 - [Code Rules and Guidelines](#code-rules-and-guidelines)
     - [Directory Structure](#directory-structure)
@@ -34,6 +36,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - TypeScript: ^5
 - ESLint: ^9
 - TailwindCSS: ^3.4.17
+- Jest: ^29.7.0
+- Husky: ^9.1.7
 
 ## Getting Started
 
@@ -126,6 +130,26 @@ Jest is also included in the project for testing. Run `npm run test` to run the 
 
 > [!IMPORTANT]
 > Make sure to write tests for your code. It is recommended to write tests for all non-component functions in the project.
+
+### Husky
+
+Husky is a tool that allows you to run scripts before committing or pushing your code. It is used to check for linting errors, run tests, and more. Husky is configured to run Eslint and Jest before committing your code in this repository, for example.
+
+- [Husky Documentation](https://typicode.github.io/husky) - learn about Husky features and API.
+
+> [!NOTE]
+> Husky is used to check for linting errors and run tests before committing your code. Make sure to fix all errors before pushing your code. If NEEDED you can skip the Husky checks by adding the `--no-verify` flag to the commit command (`git commit -m "message" -m "detailed description" --no-verify`).
+
+## On commits, branches, and PRs
+
+For commits, branches, and PRs, follow the guidelines below:
+
+- **PRs**: Always create a PR to merge with the `dev` branch. Never merge directly to the `main` branch. Assume the `main` branch is the production branch.
+- **Branches**: Create branches for each feature or bug fix. Use the format `feature/feature-name`, `bugfix/bug-name`, `issue/issue-number`, etc.
+- **Commits**: Use the [Conventional Commits](https://github.com/iuricode/padroes-de-commits) format for commits.  It's recommended to add a bigger description to the commit message for better understanding. E.g. `git commit -m "feat(login): added login" -m "Added login feature using the firebase auth api`.
+
+> [!NOTE]
+> Commits are checked and validated by Husky, Lint-staged and Jest tested. Make sure to fix all errors before pushing your code.
 
 ## On Deploying
 

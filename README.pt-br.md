@@ -19,6 +19,8 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
     - [Jest](#jest)
+    - [Husky](#husky)
+- [Commits, branches e PRs](#commits-branches-e-prs)
 - [Sobre o Deploy](#sobre-o-deploy)
 - [Regras e Diretrizes de Código](#regras-e-diretrizes-de-código)
     - [Estrutura de Diretórios](#estrutura-de-diretórios)
@@ -37,6 +39,8 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
 - TypeScript: ^5
 - ESLint: ^9
 - TailwindCSS: ^3.4.17
+- Jest: ^29.7.0
+- Husky: ^9.1.7
 
 ## Primeiros Passos
 
@@ -130,6 +134,26 @@ O Jest está incluído no projeto para testes. Execute `npm run test` para rodar
 
 > [!IMPORTANT]
 > Escreva testes para o seu código. É recomendado que se escreva testes para todas as funções externas à componentes no seu projeto.
+
+### Husky
+
+Husky é uma ferramenta que permite a execução de scripts antes de um commit ou push. Ele é usado para rodar o ESLint antes de um commit, rodar testes e mais. Husky está configurado para rodar o ESLint e Jest antes de um commit nesse repositório, por exemplo.
+
+- [Documentação do Husky](https://typicode.github.io/husky) - aprenda sobre os recursos e API do Husky.
+
+> [!IMPORTANT]
+> Husky é usado para checar por erros de linting e testes antes de um commit. Certifique-se de corrigir todos os erros antes de fazer um commit. SE necessário, é possivel ignorar o Husky temporariamente com a flag `--no-verify` (`git commit -m "mensagem" -m "descrição mais detalhada" --no-verify`).
+
+## Commits, branches e PRs
+
+Para commits, branches e PRs, siga as seguintes regras:
+
+- **PRs**: Sempre crie a PR para dar merge na branch `dev`. Nunca dê merge diretamente na branch `main`. Assuma que a branch `main` é a branch de produção.
+- **Branches**: Crie uma branch para cada nova feature ou correção de bug. Use o padrão `feature/nome-da-feature`, `bugfix/nome-do-bug`, `issue/numero-da-issue` etc.
+- **Commits**: Use o padrão de [Conventional Commits](https://github.com/iuricode/padroes-de-commits) para commits. É recomendado que se adicione descrições detalhadas para commits quando possivel para facilitar a revisão de código. Ex. `git commit -m "feat: adiciona nova feature" -m "descrição mais detalhada"`.
+
+> [!NOTE]
+> Commits são validados e checados pelo Husky, ESLint e Jest antes de serem feitos. Certifique-se de corrigir todos os erros antes de fazer um commit.
 
 ## Sobre o Deploy
 
