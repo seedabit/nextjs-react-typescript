@@ -49,6 +49,12 @@ Then, navigate to the project directory:
 cd nextjs-react-typescript
 ```
 
+Now, install the necessary dependencies:
+
+```bash
+npm install
+```
+
 Furthermore, run the development server:
 
 ```bash
