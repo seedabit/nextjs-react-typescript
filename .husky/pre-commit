@@ -10,4 +10,9 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+if npm run lint | grep -q 'No lint errors found'; then
+  echo "No lint errors found, proceeding with commit."
+  exit 0
+fi
+
 exit 0
