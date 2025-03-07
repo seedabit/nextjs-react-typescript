@@ -144,6 +144,9 @@ Husky é uma ferramenta que permite a execução de scripts antes de um commit o
 > [!IMPORTANT]
 > Husky é usado para checar por erros de linting e testes antes de um commit. Certifique-se de corrigir todos os erros antes de fazer um commit. SE necessário, é possivel ignorar o Husky temporariamente com a flag `--no-verify` (`git commit -m "mensagem" -m "descrição mais detalhada" --no-verify`).
 
+> [!TIP]
+> Caso queira usar o Github Desktop ou outra ferramenta de GUI para commits, é preciso se adicionar `[raiz]\Program Files\Git\bin` às variáveis de ambiente PATH do sistema, acima de `[raiz]\Program Files\Git\cmd` e `[raiz]\Windows\system32`. Isso garante que o Github Desktop encontre e use o binário do Git corretamente.
+
 ## Commits, branches e PRs
 
 Para commits, branches e PRs, siga as seguintes regras:

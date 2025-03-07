@@ -140,6 +140,9 @@ Husky is a tool that allows you to run scripts before committing or pushing your
 > [!NOTE]
 > Husky is used to check for linting errors and run tests before committing your code. Make sure to fix all errors before pushing your code. If NEEDED you can skip the Husky checks by adding the `--no-verify` flag to the commit command (`git commit -m "message" -m "detailed description" --no-verify`).
 
+> [!TIP]
+> If you want to use Github Desktop or other GUI tools, you need to add `[root-dir]\Program Files\Git\bin` to the PATH environment variable, above the `[root-dir]\Program Files\Git\cmd` and `[root-dir]\Windows\system32`. Ensuring that Github Desktop finds and uses the correct Git binary.
+
 ## On commits, branches, and PRs
 
 For commits, branches, and PRs, follow the guidelines below:
