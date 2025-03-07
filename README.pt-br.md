@@ -187,6 +187,7 @@ Mantenha a estrutura de diretórios do projeto para melhor organização e manut
 - `src/types`: Contém todos os tipos de dados usados no projeto.
 - `src/utils`: Contém funções utilitárias.
     - `src/utils/lib`: Contém funções utilitárias de bibliotecas externas.
+- `src/data`: Contém todos os dados/constantes usados no projeto.
 
 ### Convenções de Nomeação
 

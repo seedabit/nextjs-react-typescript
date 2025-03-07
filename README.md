@@ -183,6 +183,7 @@ Maintain the defined directory system for better organization and maintainabilit
 - `src/types`: Contains all the types used in the project.
 - `src/utils`: Contains all the utility functions used in the project.
     - `src/utils/lib`: Contains all the library functions used in the project.
+- `src/data`: Contains all the data used in the project.
 
 ### Naming Conventions
 
