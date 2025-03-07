@@ -178,11 +178,11 @@ Maintain the defined directory system for better organization and maintainabilit
     - `src/components/core`: Contains all the core components used in the project.
     - `src/components/ui`: Contains all the UI components used in the project.
 - `src/hooks`: Contains all the custom hooks used in the project.
-- `src/lib`: Contains all the library utility functions used in the project.
 - `src/services`: Contains all the services used in the project.
 - `src/tests`: Contains all the tests for the project.
 - `src/types`: Contains all the types used in the project.
 - `src/utils`: Contains all the utility functions used in the project.
+    - `src/utils/lib`: Contains all the library functions used in the project.
 
 ### Naming Conventions
 

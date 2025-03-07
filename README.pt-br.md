@@ -182,11 +182,11 @@ Mantenha a estrutura de diretórios do projeto para melhor organização e manut
     - `src/components/core`: Contém componentes básicos (core).
     - `src/components/ui`: Contém componentes de interface do usuário.
 - `src/hooks`: Contém todos os hooks personalizados.
-- `src/lib`: Contém funções utilitárias.
 - `src/services`: Contém todos os serviços usados no projeto.
 - `src/tests`: Contém todos os testes do projeto.
 - `src/types`: Contém todos os tipos de dados usados no projeto.
 - `src/utils`: Contém funções utilitárias.
+    - `src/utils/lib`: Contém funções utilitárias de bibliotecas externas.
 
 ### Convenções de Nomeação
 
