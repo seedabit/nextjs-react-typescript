@@ -1,5 +1,5 @@
 {
-    "name": "nextjs-react-typescript2",
+    "name": "nextjs-react-typescript",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -11,7 +11,7 @@
         "clean-dev": "rmdir /s /q .next && npm run dev",
         "clean-build": "rmdir /s /q .next && npm run build",
         "re-install": "rmdir /s /q node_modules && npm ci",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "dependencies": {
         "clsx": "^2.1.1",
