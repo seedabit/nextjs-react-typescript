@@ -1,18 +1,7 @@
-if npm test | grep -q 'No tests found'; then
-  echo "No tests to run, proceeding with commit."
-  exit 0
-fi
-
-npm test
-
-if [ $? -ne 0 ]; then
-  echo "Tests must pass before commit!"
-  exit 1
-fi
-
-if npm run lint | grep -q 'No lint errors found'; then
+if npm run lint; then
   echo "No lint errors found, proceeding with commit."
   exit 0
+else
+  echo "Lint errors found, aborting commit."
+  exit 1
 fi
-
-exit 0

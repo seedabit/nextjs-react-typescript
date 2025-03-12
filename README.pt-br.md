@@ -1,4 +1,4 @@
-# Next.js + React + Tailwind CSS + TypeScript + ESLint + Jest - Template de Projeto
+# Next.js + React + Tailwind CSS + TypeScript + ESLint - Template de Projeto
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.md)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.pt-br.md)
@@ -18,7 +18,6 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
     - [React](#react)
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
-    - [Jest](#jest)
     - [Husky](#husky)
 - [Commits, branches e PRs](#commits-branches-e-prs)
 - [Sobre o Deploy](#sobre-o-deploy)
@@ -39,7 +38,6 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
 - TypeScript: ^5
 - ESLint: ^9
 - TailwindCSS: ^3.4.17
-- Jest: ^29.7.0
 - Husky: ^9.1.7
 
 ## Primeiros Passos
@@ -126,18 +124,9 @@ O ESLint é uma ferramenta para identificar e relatar padrões em código ECMASc
 > [!WARNING]
 > O ESLint chamará erros se o código não estiver de acordo com as regras definidas no arquivo `.eslintrc.config.mjs`. Certifique-se de corrigir todos os erros antes de fazer um commit.
 
-### Jest
-
-O Jest está incluído no projeto para testes. Execute `npm run test` para rodar os testes.
-
-- [Meu primeiro teste com Jest](https://jestjs.io/docs/getting-started) - um guia de introdução para testes com Jest e documentação da ferramenta.
-
-> [!IMPORTANT]
-> Escreva testes para o seu código. É recomendado que se escreva testes para todas as funções externas à componentes no seu projeto.
-
 ### Husky
 
-Husky é uma ferramenta que permite a execução de scripts antes de um commit ou push. Ele é usado para rodar o ESLint antes de um commit, rodar testes e mais. Husky está configurado para rodar o ESLint e Jest antes de um commit nesse repositório, por exemplo.
+Husky é uma ferramenta que permite a execução de scripts antes de um commit ou push. Ele é usado para rodar o ESLint antes de um commit, rodar testes e mais. Husky está configurado para rodar o ESLint antes de um commit nesse repositório, por exemplo.
 
 - [Documentação do Husky](https://typicode.github.io/husky) - aprenda sobre os recursos e API do Husky.
 
@@ -156,7 +145,7 @@ Para commits, branches e PRs, siga as seguintes regras:
 - **Commits**: Use o padrão de [Conventional Commits](https://github.com/iuricode/padroes-de-commits) para commits. É recomendado que se adicione descrições detalhadas para commits quando possivel para facilitar a revisão de código. Ex. `git commit -m "feat: adiciona nova feature" -m "descrição mais detalhada"`.
 
 > [!NOTE]
-> Commits são validados e checados pelo Husky, ESLint e Jest antes de serem feitos. Certifique-se de corrigir todos os erros antes de fazer um commit.
+> Commits são validados e checados pelo Husky e ESLint antes de serem feitos. Certifique-se de corrigir todos os erros antes de fazer um commit.
 
 ## Sobre o Deploy
 
@@ -271,7 +260,6 @@ Mantenha a estrutura de diretórios do projeto para melhor organização e manut
 > A extensão do TailwindCSS é altamente recomendada para desenvolvimento com TailwindCSS. Ela fornece IntelliSense para classes do TailwindCSS.
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): IntelliSense para Tailwind CSS.
-- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Suporte para testes com Jest.
 - [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets): Suporte para React com JSX e TSX.
 
 ## Licença

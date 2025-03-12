@@ -1,4 +1,4 @@
-# Next.js + React + Tailwind CSS + TypeScript + ESLint + Jest project template
+# Next.js + React + Tailwind CSS + TypeScript + ESLint project template
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.md)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/seedabit/nextjs-react-typescript/blob/main/README.pt-br.md)
@@ -15,7 +15,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     - [React](#react)
     - [TailwindCSS](#tailwindcss)
     - [Eslint](#eslint)
-    - [Jest](#jest)
     - [Husky](#husky)
 - [On commits, branches, and PRs](#on-commits-branches-and-prs)
 - [On Deploying](#on-deploying)
@@ -36,7 +35,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - TypeScript: ^5
 - ESLint: ^9
 - TailwindCSS: ^3.4.17
-- Jest: ^29.7.0
 - Husky: ^9.1.7
 
 ## Getting Started
@@ -122,18 +120,9 @@ EsLint is a tool for identifying and reporting on patterns found in ECMAScript/J
 > [!WARNING]
 > Eslint will throw errors if the code does not follow the rules defined in `.eslintrc.config.mjs`. It is recommended to fix all linting errors before pushing your code.
 
-### Jest
-
-Jest is also included in the project for testing. Run `npm run test` to run the tests.
-
-- [My first Jest Test](https://jestjs.io/docs/getting-started) - a guide to writing your first Jest test and Jest documentation.
-
-> [!IMPORTANT]
-> Make sure to write tests for your code. It is recommended to write tests for all non-component functions in the project.
-
 ### Husky
 
-Husky is a tool that allows you to run scripts before committing or pushing your code. It is used to check for linting errors, run tests, and more. Husky is configured to run Eslint and Jest before committing your code in this repository, for example.
+Husky is a tool that allows you to run scripts before committing or pushing your code. It is used to check for linting errors, run tests, and more. Husky is configured to run Eslint before committing your code in this repository, for example.
 
 - [Husky Documentation](https://typicode.github.io/husky) - learn about Husky features and API.
 
@@ -152,7 +141,7 @@ For commits, branches, and PRs, follow the guidelines below:
 - **Commits**: Use the [Conventional Commits](https://github.com/iuricode/padroes-de-commits) format for commits.  It's recommended to add a bigger description to the commit message for better understanding. E.g. `git commit -m "feat(login): added login" -m "Added login feature using the firebase auth api`.
 
 > [!NOTE]
-> Commits are checked and validated by Husky, Lint-staged and Jest tested. Make sure to fix all errors before pushing your code.
+> Commits are checked and validated by Husky and Lint-staged tested. Make sure to fix all errors before pushing your code.
 
 ## On Deploying
 
@@ -271,7 +260,6 @@ To quickly and easily generate favicons for the app, go to [Favicon Generator](h
 > The TailwindCSS extension is a must-have for TailwindCSS projects. It provides IntelliSense for TailwindCSS classes.
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss): IntelliSense for Tailwind CSS.
-- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest): Jest testing for JavaScript and TypeScript.
 - [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets): React snippets for JSX and TSX.
 
 ## License
